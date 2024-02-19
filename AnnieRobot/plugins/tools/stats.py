@@ -8,7 +8,6 @@ from pyrogram import filters
 from pyrogram.errors import MessageIdInvalid
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
-
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
@@ -368,6 +367,7 @@ async def overall_stats(client, CallbackQuery, _):
 **Pyrogram Version :** {pyrover}
 **Py-TgCalls Version :** {pytgver}
 **N-Tgcalls Version :** {ngtgver}
+
 **Storage Avail:** {total[:4]} GiB
 **Storage Used:** {used[:4]} GiB
 **Storage Left:** {free[:4]} GiB
