@@ -3,7 +3,7 @@ from AnnieRobot.core.dir import dirr
 from AnnieRobot.core.git import git
 from AnnieRobot.core.userbot import Userbot
 from AnnieRobot.misc import dbb, heroku, sudo
-
+from AnnieRobot.platforms import *
 from .logging import LOGGER
 
 # Directories
