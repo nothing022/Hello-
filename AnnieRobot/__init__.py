@@ -41,10 +41,10 @@ userbot = Userbot()
 
 from .platforms import *
 
-YouTube = YouTubeAPI()
-Carbon = CarbonAPI()
-Spotify = SpotifyAPI()
 Apple = AppleAPI()
+Carbon = CarbonAPI()
 Resso = RessoAPI()
 SoundCloud = SoundAPI()
+Spotify = SpotifyAPI()
 Telegram = TeleAPI()
+YouTube = YouTubeAPI()
