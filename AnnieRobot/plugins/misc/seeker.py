@@ -1,8 +1,5 @@
-
 import asyncio
-
 from pyrogram.types import InlineKeyboardMarkup
-
 from strings import get_string
 from AnnieRobot.misc import db
 from AnnieRobot.utils.database import (get_active_chats, get_lang,
