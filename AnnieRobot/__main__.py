@@ -9,7 +9,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from AnnieRobit import LOGGER, app, userbot
-from AnnieRobot.core.call import Yukki
+from AnnieRobot.core.call import Annie
 from AnnieRobot.plugins import ALL_MODULES
 from AnnieRobot.utils.database import get_banned_users, get_gbanned
 
