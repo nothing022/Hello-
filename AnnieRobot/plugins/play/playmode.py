@@ -13,11 +13,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.utils.database import (get_playmode, get_playtype,
+from AnnieRobot import app
+from AnnieRobot.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from YukkiMusic.utils.decorators import language
-from YukkiMusic.utils.inline.settings import playmode_users_markup
+from AnnieRobot.utils.decorators import language
+from AnnieRobot.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
