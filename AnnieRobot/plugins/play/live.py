@@ -11,10 +11,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from YukkiMusic import YouTube, app
-from YukkiMusic.utils.channelplay import get_channeplayCB
-from YukkiMusic.utils.decorators.language import languageCB
-from YukkiMusic.utils.stream.stream import stream
+from AnnieRobot import YouTube, app
+from AnnieRobot.utils.channelplay import get_channeplayCB
+from AnnieRobot.utils.decorators.language import languageCB
+from AnnieRobot.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
