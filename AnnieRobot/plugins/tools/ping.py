@@ -1,18 +1,6 @@
-#
-# Copyright (C) 2021-present by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 from datetime import datetime
-
 from pyrogram import filters
 from pyrogram.types import Message
-
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from AnnieRobot import app
