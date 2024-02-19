@@ -1,4 +1,3 @@
-
 import asyncio
 import importlib
 import sys
@@ -8,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from AnnieRobit import LOGGER, app, userbot
+from AnnieRobot import LOGGER, app, userbot
 from AnnieRobot.core.call import Annie
 from AnnieRobot.plugins import ALL_MODULES
 from AnnieRobot.utils.database import get_banned_users, get_gbanned
@@ -46,7 +45,7 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("Annierobot.plugins" + all_module)
+        importlib.import_module("AnnieRobot.plugins" + all_module)
     LOGGER("AnnieRobot.plugins").info(
         "Successfully Imported Modules "
     )
@@ -64,10 +63,10 @@ async def init():
     except:
         pass
     await Annie.decorators()
-    LOGGER("AnnieRobot").info(" Bot Started Successfully")
+    LOGGER("AnnieRobot").info("Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("AnnieRobot").info("Stopping  Music Bot! GoodBye")
+    LOGGER("AnnieRobot").info("Stopping Music Bot! GoodBye")
