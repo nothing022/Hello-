@@ -3,7 +3,7 @@ from AnnieRobot.core.dir import dirr
 from AnnieRobot.core.git import git
 from AnnieRobot.core.userbot import Userbot
 from AnnieRobot.misc import dbb, heroku, sudo
-
+from AnnieRobot.platforms import YouTubeAPI
 from .logging import LOGGER
 
 # Directories
@@ -29,7 +29,7 @@ userbot = Userbot()
 
 from .platforms import *
 
-YouTube = YouTubeAPI()
+YouTube = YouTubeAPI
 Carbon = CarbonAPI()
 Spotify = SpotifyAPI()
 Apple = AppleAPI()
