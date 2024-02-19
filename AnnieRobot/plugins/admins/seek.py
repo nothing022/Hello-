@@ -1,4 +1,3 @@
-
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -61,7 +60,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await Yukki.seek_stream(
+        await Annie.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
