@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-present by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
 from AnnieRobot.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
@@ -155,10 +146,9 @@ def PlayWrapper(command):
                     get.status == ChatMemberStatus.BANNED
                     or get.status == ChatMemberStatus.RESTRICTED
                 ):
-                    return await message.reply_photo(
-                      photo="https://telegra.ph/file/12b8d631e42aa4d3184f1.jpg",
-                      caption=_["call_2"].format(userbot.username, userbot.id),
-                      reply_markup=InlineKeyboardMarkup(button),
+                    return await message.reply_text(
+                              text=_["call_2"].format(userbot.username, userbot.id),
+                          reply_markup=InlineKeyboardMarkup(button),
                         )
         except UserNotParticipant:
             chat = await app.get_chat(chat_id)
