@@ -1,4 +1,4 @@
-from AnnieRobot.core.bot import AnnieRobot
+from AnnieRobot.core.bot import AnnieBot
 from AnnieRobot.core.dir import dirr
 from AnnieRobot.core.git import git
 from AnnieRobot.core.userbot import Userbot
@@ -32,7 +32,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = AnnieRobot()
+app = AnnieBot()
 
 # Assistant Client
 userbot = Userbot()
