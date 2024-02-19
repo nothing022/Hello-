@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-present by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import random
 import string
 from ast import ExceptHandler
@@ -20,7 +10,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from AnnieRobot import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
 from AnnieRobot.core.call import Annie
 from AnnieRobot.utils import seconds_to_min, time_to_seconds
@@ -599,7 +589,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("YukkiPlaylists") & ~BANNED_USERS
+    filters.regex("AnniePlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
