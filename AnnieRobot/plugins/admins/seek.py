@@ -1,22 +1,13 @@
-#
-# Copyright (C) 2021-present by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
 
 from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import YouTube, app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.misc import db
-from YukkiMusic.utils import AdminRightsCheck, seconds_to_min
+from AnnieRobot import YouTube, app
+from AnnieRobot.core.call import Annie
+from AnnieRobot.misc import db
+from AnnieRobot.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
