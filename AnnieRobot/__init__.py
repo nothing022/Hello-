@@ -1,10 +1,14 @@
+import re
+from .platforms.youtube import YouTubeAPI  # Move this line up
+
 from AnnieRobot.core.bot import AnnieBot
 from AnnieRobot.core.dir import dirr
 from AnnieRobot.core.git import git
 from AnnieRobot.core.userbot import Userbot
 from AnnieRobot.misc import dbb, heroku, sudo
-import re
+
 from .logging import LOGGER
+
 
 # Directories
 dirr()
