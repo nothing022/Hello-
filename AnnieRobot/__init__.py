@@ -1,4 +1,4 @@
-from AnnieRobot.core.bot import AnnieBot
+from AnnieRobot.core.bot import AnnieRobot
 from AnnieRobot.core.dir import dirr
 from AnnieRobot.core.git import git
 from AnnieRobot.core.userbot import Userbot
@@ -12,7 +12,7 @@ from typing import Union
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
-from AnnieRobot.platforms import AppleAPI
+
 
 
 
@@ -32,7 +32,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = AnnieBot()
+app = AnnieRobot()
 
 # Assistant Client
 userbot = Userbot()
